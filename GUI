@@ -1,0 +1,93 @@
+if __name__ == '__main__':
+    print("********** WELCOME TO PRIME EVENTS **********\n")
+    print("\t1.Login\t\t2.Register")
+
+
+
+    choice=int(input("\nSelect your option = "))
+    if(choice==1):
+        print("Please choose weather you are:")
+        print("\t1.Customer\t\t2.Owner\t\t3.Administrator")
+        choice_login = int(input("\nSelect your option:"))
+        if (choice_login==1):
+            user_id = input("User id:")
+            password = input("Password:")
+            print("**** You have successfully logged in as a Customer****\n")
+
+            print("Please select what would you like to do from the following options\n")
+            print(" 1.View available halls\n 2.Book a hall\n 3.Request quotation for a hall\n 4.Manage booking\n 5.Write a review\n6.Logout\n")
+            choice = int(input("\n Your choice:"))
+            if (choice==1):
+                print(" 1.Search for a hall\n 2.Display all the available halls\n")
+                choice = int(input("Select a option"))
+            elif (choice==2):
+                print("Please pay deposit to confirm your booking")
+            elif (choice==3):
+                print("Your request for quotation has been sent to the owner of the hall")
+            elif (choice==4):
+                print("1.Modify booking\n 2.Cancel existing booking\n")
+                choice=int(input("Select a option:"))
+            elif (choice==5):
+                print("Please write a review")
+            elif (choice==6):
+                print("Logging out")
+            else:
+                print("Please enter a valid option")
+
+        elif (choice_login==2):
+            user_id = input("User id:")
+            password = input("Password:")
+            print("**** You have successfully logged in as a Owner ****\n")
+
+            print("Please select what would you like to do from the following options\n")
+            print(" 1.Create hall\n 2.Booking Management\n 3.Hall Management\n 4.Payments\n 5.Discount allocation\n 6.Logout\n")
+            choice = int(input("Select a option"))
+            if (choice==1):
+                print("Enter all the specifications about the hall")
+            elif (choice==2):
+                print("1.Add booking\n 2.Modify booking\n 3.Cancel booking\n")
+                choice = int(input("Select a option"))
+            elif (choice==3):
+                print("1.Edit a hall\n 2.Delete hall\n")
+                choice = int(input("Select a option"))
+            elif (choice==4):
+                print("1.Update Payment record\n 2.Delete Payment\n")
+                choice = int(input("Select a option"))
+            elif (choice==5):
+                print("1.Add discount\n 2.Update discount\n 3.Delete discount\n")
+                choice = int(input("Select a option"))
+            else:
+                print("Please enter a valid option")
+
+        elif (choice_login==3):
+            user_id = input("User id:")
+            password = input("Password:")
+            print("**** You have successfully logged in as Admin****\n")
+
+            print("Please select what would you like to do from the following options\n")
+            print(" 1.Discount management\n 2.User Management\n 3.Logout")
+            choice = int(input("Select a option"))
+            if (choice==1):
+                print(" 1.Add discount\n 2.Update discount\n 3.Delete discount\n")
+                choice = int(input("Select a option"))
+            elif (choice==2):
+                print(" 1.Add user\n 2.Update user\n 3.Delete user\n")
+                choice = int(input("Select a option"))
+            else:
+                print("Select a valid option")
+
+
+        else:
+            print("\nINVALID OPTION")
+
+
+
+    elif(choice==2):
+        print("Please select how would you like to register as:")
+        print("\t1.Customer\t\t2.Owner")
+        choice_register = int(input("\nSelect your option:"))
+
+    else:
+        print("\nINVALID OPTION SELECTED")
+
+
